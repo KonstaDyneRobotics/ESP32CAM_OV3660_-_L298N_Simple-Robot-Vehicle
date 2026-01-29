@@ -68,7 +68,7 @@ static const char index_html_2[] PROGMEM =
 "function resetTilt(){"
 " var slider=document.getElementById('camTilt');"
 " var current=parseInt(slider.value);"
-" var target=45;"
+" var target=45;" //    !!!  set custom value for button CAM_RST ,Default =45 !!!
 " var step=current<target?1:-1;"
 " var interval=setInterval(function(){"
 "  if(current==target){clearInterval(interval);return;}"
@@ -78,7 +78,7 @@ static const char index_html_2[] PROGMEM =
 "function lookup(){"
 " var slider=document.getElementById('camTilt');"
 " var current=parseInt(slider.value);"
-" var target=90;"
+" var target=90;" //    !!! set custom value for button CAM_UP,Default =90 !!!
 " var step=current<target?1:-1;"
 " var interval=setInterval(function(){"
 "  if(current==target){clearInterval(interval);return;}"
@@ -940,3 +940,4 @@ httpd_uri_t reverseright_uri = {
     }
 }
 //**********************-----END------***************************************
+
