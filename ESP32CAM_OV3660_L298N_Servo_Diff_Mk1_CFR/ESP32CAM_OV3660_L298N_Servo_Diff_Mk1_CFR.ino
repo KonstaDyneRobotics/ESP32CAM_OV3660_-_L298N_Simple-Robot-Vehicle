@@ -105,7 +105,7 @@ void setup()
   //
   config.xclk_freq_hz = 16000000; // 20000000 Hz is standard but requires stable power supply (5V ,2A)
   //and can interfere with the 20MHz Wifi4 Signal
-  //16000000 Hz or 8000000 provide better more stability. Range: 6000000 to 24000000
+  //16000000 Hz or 8000000 provide more stability. Range: 6000000 to 24000000
   config.pixel_format = PIXFORMAT_JPEG;
   // 
   if(psramFound()){
@@ -195,4 +195,5 @@ void loop() {
   }
 }
 //
+
 //**********************-----END------***************************************
