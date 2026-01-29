@@ -207,11 +207,11 @@ void servo()
 //sensor_t * s = esp_camera_sensor_get();
  //if (serval >=135 && serval <=180 )
  //{
- //s->set_vflip(s, 0); 
+ //s->set_vflip(s, 1); 
  //}
  // else
  //{
- // s->set_vflip(s, 1);  
+ // s->set_vflip(s, 0);  
  //} 
 }
 //
@@ -934,3 +934,4 @@ httpd_uri_t reverseright_uri = {
     }
 }
 //**********************-----END------***************************************
+
