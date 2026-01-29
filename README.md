@@ -6,6 +6,7 @@
 - Large video streaming window .
 - Enhanced Video image adapted to OV3660 camera sensor.
 - "Carbon Fiber_Red" (somewhat "muted" ) style UI ,but gentle with the eyes .
+- Code is directly compatible with quite a few  2WD/4WD ESP32 CAM & L298N based robot vehicles found on the global market.
 *************** Basic Parts List ******************************************* 
 -ESP32CAM AI THINKER module with OV3660 camera sensor and external WiFi antenna 
 (0 Ohm resistor has to be unsoldered from onboard antenna pad and be soldered to the external antenna plug pad)
