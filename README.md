@@ -5,9 +5,11 @@
 - Tilt Camera control (with optional servo motor attached).
 - Large video streaming window .
 - Enhanced Video image adapted to OV3660 camera sensor.
-- "Carbon Fiber_Red" (somewhat "muted" ) style UI ,but gentle with the eyes .
-- Code is directly compatible with quite a few  2WD/4WD ESP32 CAM & L298N based robot vehicles found on the global market.
+- "Carbon Fiber_Flame Red" or "Mil Spec Tactical (somewhat "muted" ) style UIs ,but gentle with the eyes .
 
+- Two UI styles
+- Code is directly compatible with quite a few  2WD/4WD ESP32 CAM & L298N based robot vehicles found on the global market.
+- Folder with CFR ending : carbon fiber & flame red UI / folder with MILSPEC ending : tactical UI 
 
 Basic Parts List
 -ESP32CAM AI THINKER module with OV3660 camera sensor and external WiFi antenna 
