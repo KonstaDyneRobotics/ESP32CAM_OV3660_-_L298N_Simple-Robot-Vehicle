@@ -7,7 +7,9 @@
 - Enhanced Video image adapted to OV3660 camera sensor.
 - "Carbon Fiber_Red" (somewhat "muted" ) style UI ,but gentle with the eyes .
 - Code is directly compatible with quite a few  2WD/4WD ESP32 CAM & L298N based robot vehicles found on the global market.
-*************** Basic Parts List ******************************************* 
+
+
+Basic Parts List
 -ESP32CAM AI THINKER module with OV3660 camera sensor and external WiFi antenna 
 (0 Ohm resistor has to be unsoldered from onboard antenna pad and be soldered to the external antenna plug pad)
 -L298N Motor Driver
@@ -15,10 +17,13 @@
 -2WD / 4WD platform (chassis + motors + tracks/wheels)
 -(optional) S90 analog micro servo + bracket for camera tilt (DIY)
 -(optional) DC/DC 12V>5V 2A PSU for powering the servo motor
-*****************************************************************************
+
+
+Software
 Arduino IDE : Download " esp32 " at board manager by Espressif Systems Ver .: 3.1.0 <===IMPORTANT !!!
 (optional): Download SimpleServoESP32  ver: 1.0.1  library for the servo motor.
-#############################Pin connections#################################  
+
+Pin connections
 5V ==> to 5V out of the L298N Motor Driver module 
 GND ==> to GND of the L298N Motor Driver module 
 12 ==> to IN4  of the L298N Motor Driver module, LEFT_M1
@@ -26,19 +31,21 @@ GND ==> to GND of the L298N Motor Driver module
 15 ==> to IN2  of the L298N Motor Driver module ,RIGHT_M1 
 14 ==> to IN1  of the L298N Motor Driver module ,RIGHT_M0 
 2 ==> to Signal Input of the servo motor  ( camera tilt )
-****************************************************************************
+
+
 // L298N Motor Connections 
 OUT1 : Red wire (+) of Right motor(s) 
 OUT2 : Black wire (-) of Right motor(s) 
 OUT3 : Black wire (-) of Left motor(s)
 OUT1 : Red wire (+) of Left motor(s)
-*****************************************************************************
+
+
 WiFi ssid : ESP32CAM Robot
 WiFi password: 1234567890
 Once WiFi connection is established ,on the web browser type : 192.168.4.1 to enter the UI control page
-#############################################################################
-UI DEscription (top of screen to bottom ) :
 
+
+UI DEscription (top of screen to bottom ) :
 * 540 pixel wide video sreaming screen
 * 
 * "CAM TILT" Slider : adjusts camera tilt at steps of 5 degrees ,range : 0 to 180 degrees
@@ -63,7 +70,7 @@ UI DEscription (top of screen to bottom ) :
 * 
 * "SPEED" Slider : adjusts pwm motor speed ,range : 105 to 255
 
-____________________________________________________________________________________________________________________
+
 Known bugs :
 1) Due to browser touchscreen latency deactivation ,touching a button and dragging the finger away from the button 
 results for the given command not to cancel itself .i.e. robot doesn't n stop or lights remain ON or OFF ,after signalling.
