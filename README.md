@@ -26,10 +26,10 @@ Arduino IDE : Download " esp32 " at board manager by Espressif Systems Ver .: 3.
 Pin connections
 5V ==> to 5V out of the L298N Motor Driver module 
 GND ==> to GND of the L298N Motor Driver module 
-12 ==> to IN4  of the L298N Motor Driver module, LEFT_M1
-13 ==> to IN3  of the L298N Motor Driver module, LEFT_M0 
-15 ==> to IN2  of the L298N Motor Driver module ,RIGHT_M1 
-14 ==> to IN1  of the L298N Motor Driver module ,RIGHT_M0 
+12 ==> to IN4  of the L298N Motor Driver module, 
+13 ==> to IN3  of the L298N Motor Driver module, 
+15 ==> to IN2  of the L298N Motor Driver module ,
+14 ==> to IN1  of the L298N Motor Driver module ,
 2 ==> to Signal Input of the servo motor  ( camera tilt )
 
 
