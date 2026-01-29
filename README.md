@@ -6,44 +6,63 @@
 - Large video streaming window .
 - Enhanced Video image adapted to OV3660 camera sensor.
 - "Carbon Fiber_Flame Red" or "Mil Spec Tactical (somewhat "muted" ) style UIs ,but gentle with the eyes .
-
-- Two UI styles
 - Code is directly compatible with quite a few  2WD/4WD ESP32 CAM & L298N based robot vehicles found on the global market.
-- Folder with CFR ending : carbon fiber & flame red UI / folder with MILSPEC ending : tactical UI 
+- Two UI styles : Folder  CFR : carbon fiber & flame red UI // folder  MILSPEC : tactical UI 
 
 Basic Parts List
 -ESP32CAM AI THINKER module with OV3660 camera sensor and external WiFi antenna 
+
 (0 Ohm resistor has to be unsoldered from onboard antenna pad and be soldered to the external antenna plug pad)
+
 -L298N Motor Driver
+
 -3 x18650 3.7V Li ion batteries + 3x18650 battery case/holder + toggle switch 
+
 -2WD / 4WD platform (chassis + motors + tracks/wheels)
+
 -(optional) S90 analog micro servo + bracket for camera tilt (DIY)
+
 -(optional) DC/DC 12V>5V 2A PSU for powering the servo motor
 
 
 Software
+
 Arduino IDE : Download " esp32 " at board manager by Espressif Systems Ver .: 3.1.0 <===IMPORTANT !!!
+
 (optional): Download SimpleServoESP32  ver: 1.0.1  library for the servo motor.
 
 Pin connections
+
 5V ==> to 5V out of the L298N Motor Driver module 
+
 GND ==> to GND of the L298N Motor Driver module 
+
 12 ==> to IN4  of the L298N Motor Driver module, 
+
 13 ==> to IN3  of the L298N Motor Driver module, 
+
 15 ==> to IN2  of the L298N Motor Driver module ,
+
 14 ==> to IN1  of the L298N Motor Driver module ,
+
 2 ==> to Signal Input of the servo motor  ( camera tilt )
 
 
 // L298N Motor Connections 
+
 OUT1 : Red wire (+) of Right motor(s) 
+
 OUT2 : Black wire (-) of Right motor(s) 
+
 OUT3 : Black wire (-) of Left motor(s)
+
 OUT1 : Red wire (+) of Left motor(s)
 
 
 WiFi ssid : ESP32CAM Robot
+
 WiFi password: 1234567890
+
 Once WiFi connection is established ,on the web browser type : 192.168.4.1 to enter the UI control page
 
 
