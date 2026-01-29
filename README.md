@@ -98,7 +98,7 @@ results for the given command not to cancel itself .i.e. robot doesn't n stop or
 UI is super crisp and sensitive at the cost of that bug .Try not to drag or swipe your fingers over the buttons ,
 or from button to button .Light touches only ,are more than enough and the control is very accurate and precise.
 
-For more info and questions  : sdsvcstems@gmail.com
+Contact info  : sdsvcstems@gmail.com
 
 
 
