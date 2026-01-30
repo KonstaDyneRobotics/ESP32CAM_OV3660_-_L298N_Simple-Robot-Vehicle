@@ -164,6 +164,7 @@ void setup()
   //ssid_hidden: (0 = broadcast SSID, 1 = hide SSID),max_connection: maximum simultaneous connected clients (1-4))
   WiFi.setSleep(false); // !!! Disable sp32 cam wifi sleep mode !!! Very important for uninterrupted WiFi communication
   WiFi.mode(WIFI_AP); // !!! Lock WiFi mode = Access point mode: stations can connect to the ESP32
+  WiFi.setTxPower(WIFI_POWER_19_5dBm); // !!! Setting WiFi Max Transmision power
   IPAddress RoboIP = WiFi.softAPIP();
   Serial.print("RobotUI IP address: ");
   Serial.println(RoboIP);
@@ -195,4 +196,5 @@ void loop() {
   }
 }
 //
+
 //**********************-----END------***************************************
